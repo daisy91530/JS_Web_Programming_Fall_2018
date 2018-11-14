@@ -1,0 +1,392 @@
+* {
+	font-family: "Arial", "標楷體";
+	margin: 0 ;
+	padding: 0 ;
+}
+
+#page-top {
+	width: 100%;
+	/*overflow: hidden;
+  	position: relative;*/
+	background-image: linear-gradient(to right, #DA6C90, #FFFFFF, #ffffff, #dbcbbb);
+}
+.container {
+	max-width:1170px;
+	margin: 0 auto;
+}
+a:hover, a:active, a:focus {
+    color: #940094;
+}
+
+#home h1 {
+  color: #2D2926;
+  font-family: Arial;
+  font-weight: 350;
+  letter-spacing: 8px;
+  margin: 0 0 30px 0; 
+  font-size:60px;
+}
+#home div {
+        background-size: cover;
+        /*background-position: bottom center;*/
+        min-height: 400px;
+        position: relative; 
+}
+#home p {
+	/*letter-spacing: 0px;*/
+}
+/*aside-appear****************************************/
+#aside-appear #side-menu ul li a:hover:after {
+              visibility: visible;       
+}
+#aside-appear #side-menu ul li.active a {
+          color: #940094;;  /*go to section and the part continues to be this color*/
+}
+#aside-appear #side-menu ul li.active a:after {
+            visibility: visible; 
+}
+#aside-appear .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#aside-appear {
+	border-radius: 5px 5px 5px 5px;
+	background: #fff0f7;
+	height: 100%;
+    width: 0;
+    position: fixed; /*right part will not go down*/
+    overflow-x: hidden;  /*will not be showing out*/
+    transition: 0.5s; /*scroll */
+    padding-top: 3em;  /*top of the navbar*/
+    padding-bottom: 40px;
+    /*visibility: hidden;*/
+}
+
+@media screen and (max-width: 480px) { 
+    #aside-appear {
+      padding-top: 3em; 
+      z-index: 1;   /*Let the side-appear navbar be infront of everything*/
+  	} 
+}
+
+#aside-appear .author-img {
+	width:150px;
+	height:150px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border-radius: 50%;
+	
+}
+#aside-appear #author-name {
+	font-weight: 600;
+	font-size: 20px;
+	width: 100%;
+	font-family: Arial;
+	letter-spacing: 5px;
+}
+#aside-appear #author-name a {
+	display: block;
+	text-align: center;
+	padding-right:.3em;
+	color: rgba(0, 0, 0, 0.7);
+	font-family: Arial;
+	text-decoration: none;
+}
+#aside-appear #author-name a:hover {
+	color: #878787; /*mouse move to Daisy on the sidenav*/
+}
+#aside-appear .author-info {
+	display: block;
+	margin-bottom: 2em;
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-family: Arial;
+	color : rgba(0, 0, 0, 0.7);
+}
+
+#aside-appear #side-menu ul {
+	text-align: center;
+	margin: 0;
+	padding:0;
+}
+
+#aside-appear #side-menu ul li {
+	 margin: 0 0 10px 0;
+     padding: 0;
+        list-style: none;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 3px; 
+}
+#aside-appear #side-menu ul li a {
+    text-decoration: none;
+    font-family: Arial;
+}
+#aside-appear #side-menu ul li a:hover {
+    text-decoration: underline;
+    transition-delay: 1s;
+}
+#aside-appear .side-footer {
+	text-align: center;
+	font-weight: 300;
+	font-size:13px;
+	width:100%;
+	
+}
+#aside-appear .side-footer li {
+	display: inline;
+	list-style: none;
+}
+#aside-appear .side-footer a {
+    padding: 4px; 
+}
+/*******aside-appear***********************************/
+.side-footer a, i {
+	font-size: 20px;
+}
+/**************aside*************************/
+#aside #side-menu ul li a:hover {
+              visibility: visible;    
+              text-decoration: underline;   
+}
+#aside #side-menu ul li a:hover:after {
+              visibility: visible;       
+}
+#aside #side-menu ul li.active a {
+          color: #940094;;  /*go to section and the part continues to be this color*/
+}
+#aside #side-menu ul li.active a:after {
+            visibility: visible; 
+}
+
+#aside {
+  height: 100%;
+  top: 0;
+  border-radius: 5px 5px 5px 5px;
+  padding-top: 3em;
+  padding-bottom: 40px;
+  float: left;
+  width: 300px;
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 1001;
+  background: #fff0f7;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 480px) {  /*if small screen, hide side navbar*/
+    #aside {
+      width: 300px;
+      -moz-transform: translateX(-300px); /*firefox*/
+      -webkit-transform: translateX(-300px); /*chrome, safari*/
+      -ms-transform: translateX(-300px);
+      -o-transform: translateX(-300px); /*opera*/
+      transform: translateX(-300px);
+      padding-top: 4em; } }
+
+#aside .author-img {
+	width:150px;
+	height:150px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border-radius: 50%;
+	
+}
+#aside #author-name {
+	font-weight: 600;
+	font-size: 20px;
+	width: 100%;
+	font-family: Arial;
+	letter-spacing: 5px;
+}
+#aside #author-name a {
+	display: block;
+	text-align: center;
+	padding-right:.3em;
+	color: rgba(0, 0, 0, 0.7);
+	font-family: Arial;
+	text-decoration: none;
+}
+#aside #author-name a:hover {
+	color: #878787; /*mouse move to Daisy on the sidenav*/
+}
+#aside .author-info {
+	display: block;
+	margin-bottom: 2em;
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-family: Arial;
+	color : rgba(0, 0, 0, 0.7);
+}
+
+#aside #side-menu ul {
+	text-align: center;
+	margin: 0;
+	padding:0;
+}
+/*??*/
+@media screen and (max-width: 480px) {
+        #aside #side-menu ul {
+          margin: 0 0 2em 0; } 
+}
+
+#aside #side-menu ul li {
+	 margin: 0 0 10px 0;
+     padding: 0;
+        list-style: none;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 3px; 
+}
+#aside #side-menu ul li a {
+    text-decoration: none;
+    font-family: Arial;
+}
+#aside .side-footer {
+	text-align: center;
+	font-weight: 300;
+	font-size:13px;
+	width:100%;
+	
+}
+#aside .side-footer li {
+	display: inline;
+	list-style: none;
+}
+#aside .side-footer a {
+    padding: 4px; 
+}
+/**********************aside*****************************/
+#main-page { /*id use #*/
+	width: calc(100% - 300px); 
+	float: right;
+	transition: margin-left .5s; /*trainsition!*/
+}
+@media screen and (max-width: 480px) {
+    #main-page {
+      width: 100%; /*small screen right page become whole page */
+      padding: 0 ; /*up right down left */
+
+  } 
+}
+.container .openbtn {
+    visibility: collapse;
+    color: #2D2926;
+    z-index: 1; /*Be infront of everything*/
+}
+@media screen and (max-width: 480px) {
+    .container .openbtn {
+    padding-left: 10px;
+    padding-top: 5px;
+    position: fixed;
+      visibility: visible;
+    }
+}
+#main-page img {
+	width:100%;
+	align:center;
+	border-radius: 0px 5px 5px 0px;
+}
+.hw22,
+.hw33, 
+.hw44,
+.hw55,
+.hw66,
+.hw77,
+.aboutt {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  /*display: block; */
+}
+
+@media screen and (max-width: 480px) {
+.hw22,
+.hw33, 
+.hw44,
+.hw55,
+.hw66,
+.hw77,
+.aboutt {
+      padding-top: 100px;
+      padding-bottom: 200px; } 
+ }
+.homee {
+	padding-bottom: 100px;
+	border-radius: 0px 5px 5px 0px;
+    background-size: cover; /*Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges*/
+    background-image: url(cv.jpg);
+}
+.home-hi {
+	padding-top:120px;
+}
+.describe-block {
+  padding: 0 2.5em 0 2.5em; 
+  /*background: #ffffee;*/
+}
+  
+@media screen and (max-width: 480px) {
+    .describe-block {
+      padding: 0 1.5em 0 1.5em; 
+  } 
+} 
+.small-title {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+  letter-spacing: 5px; 
+}
+.big-title {
+  font-size: 18px;
+  margin-bottom: 4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+}
+/*.homee {
+  min-height: 500px;
+  background: #fff url(../images/loader.gif) no-repeat center center;
+  width: 100%;
+  float: left;
+  margin-bottom: 10em;
+  clear: both; 
+}*/
+
+#grad {
+	background-color: #DA6C90;
+	background-image: linear-gradient(#DA6C90, #FEFCFD)
+}
+
+
+h1 {
+	font-family: Arial;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+h2 {
+	font-family: Arial;
+	color: #000;
+}
+
+footer {
+	padding-top: 10px;
+	font-family: Arial;
+	/*border:0px solid #F1DFDD;*/
+}
+p {
+	color: #785D5D;
+	font-family: Arial;
+	font-size: 10pt;
+	letter-spacing: 1px;
+  	margin-bottom: 1.5em;
+}
+section {
+	font-family: Arial;
+	color: #ADA4AE;
+}

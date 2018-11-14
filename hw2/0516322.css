@@ -1,0 +1,28 @@
+body {
+	font-family:Arial;
+}
+h1, h3 {
+	
+	color: #8B1C62;
+}
+
+tr {
+	background-color: #FF3E96;
+	color: #fff;
+	border: 3, 3, 3, 3;
+	padding:10px;
+	text-align: center;
+}
+.good {
+	background-color: #FF6EB4;
+}
+td {
+	padding:10px;
+	text-align: center;
+}
+table {
+	border: solid 1px #8B1C62;
+	float:left;
+	
+	margin: 10px;
+}
