@@ -5,4 +5,5 @@ JavaScript網頁程式設計
 homework and project by. Prof 廖文宏 @NCTU Taiwan
 
 ## HW1 Design my own homepage
-## HW2 Write a card game
+## HW2 Write a card game (start)
+## HW3 Write a card game (finish)
