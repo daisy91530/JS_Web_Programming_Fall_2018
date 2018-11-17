@@ -1,9 +1,28 @@
 body {
 	font-family:Arial;
+	
 }
 h1, h3 {
-	
+	text-align: center;
 	color: #8B1C62;
+}
+.btn {
+	display: inline;
+	margin-bottom: 10px;
+	height: 30px;
+	width: 100px;
+	border-radius: 13px;
+	background-color: #FFC0CB;
+	color:#fff;
+	letter-spacing: 2px;
+	border-color: #FFF;
+}
+input {
+	display:block;
+	margin:auto;
+}
+div {
+	text-align: center;
 }
 
 tr {
@@ -16,13 +35,16 @@ tr {
 .good {
 	background-color: #FF6EB4;
 }
+.goodd {
+	background-color: #FFB7DD;
+}
 td {
 	padding:10px;
 	text-align: center;
 }
 table {
 	border: solid 1px #8B1C62;
-	float:left;
+	display: inline-block;
 	
 	margin: 10px;
 }
