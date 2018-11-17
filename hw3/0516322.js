@@ -25,7 +25,6 @@ var flashnum=0, timer, answer;
 
 function blink(bingo){
 	var o, i;
-	
 
 	flashnum = bingo || Math.floor(Math.random()*63) + 1;
 	o = document.getElementsByName("num"+flashnum);
@@ -33,13 +32,9 @@ function blink(bingo){
 	for(i=0;i<=o.length;i++){
 		if(o[i].innerText==flashnum){
 			o[i].style.backgroundColor="#FF6EFF";
-		}
-		
-	}
-	
-	for(i=0;i<=o.length;i++){
-		if(o[i].innerText==flashnum){
-			o[i].style.backgroundColor="#FF6EB4";
+		}else{
+			o[i].style.backgroundColor="#FF6E00";
+			//document.writeln("g");
 		}
 	}
 	var o = document.getElementById("message");
